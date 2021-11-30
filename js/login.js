@@ -48,6 +48,8 @@ $(document).ready(function(){
 			var alertTxt="";
 			if(y==0)
 				alertTxt="<div class='alert alert-danger'>Predict the login is invalid</div>";
+			else
+				alertTxt="<div class='alert alert-success'>Predict the login is valid</div>";
 			bootbox.alert({
 				message: "<h2><i class='fas fa-check-circle'></i> Login Success</h2><br/>"+alertTxt + result_value.html(),
 				size: "large",
