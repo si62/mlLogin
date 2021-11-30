@@ -1,0 +1,6 @@
+X1 = Login time usage
+X2 = Input username speed (total seconds)
+X3 = Input password speed (total seconds)
+X4 = Count uppercase letter on username
+X5 = Last enter to password field press tab (0) or mouse click (1)
+X6 = Press enter (0) to sumbit or mouse click (1)

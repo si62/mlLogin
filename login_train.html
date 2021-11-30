@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+    <title>Login Train</title>
+	<!-- JQuery -->
+	<script  src="https://code.jquery.com/jquery-3.6.0.min.js"  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="  crossorigin="anonymous"></script>
+
+    <!-- Bootstrap core CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Bootstrap core JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.5.2/bootbox.min.js"></script>
+	
+	<!-- brain.js -->
+	<script src="https://unpkg.com/brain.js"></script>
+	
+	<!-- Fontawesome core CSS -->
+	<link href="lib/fontawesome/css/all.min.css" rel="stylesheet">	
+    <!-- Favicons -->
+	<meta name="theme-color" content="#7952b3">
+
+	<!-- Custom styles for this template -->
+	<link href="css/signin.css" rel="stylesheet">
+	<link href="css/offcanvas.css" rel="stylesheet">
+	
+	<!-- Custom javascript-->
+	<script src="js/login_core.js"></script>
+	<script src="js/login_train.js"></script>
+</head>
+<body class="text-center">
+    
+<main class="form-signin">
+
+  <div class="d-flex align-items-center p-3 my-3 text-white bg-primary rounded shadow-sm">
+
+    <div class="lh-1">
+      <h1 class="h2 mb-0 text-white lh-1">Login Train</h1>
+    </div>
+  </div>
+  
+  <form action="#" method="post" id="loginForm">
+    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+	<div class="container">
+		<div class="text-start row">
+			<div class="form-check col">
+			  <input class="form-check-input" type="radio" name="flexRadioDefault" id="trainTrue" checked>
+			  <label class="form-check-label" for="trainTrue">
+				Training y = 1 True
+			  </label>
+			</div>
+			<div class="form-check col">
+			  <input class="form-check-input" type="radio" name="flexRadioDefault" id="trainFalse" >
+			  <label class="form-check-label" for="trainFalse">
+				Train y = 0 False
+			  </label>
+			</div>	
+		</div>
+	</div>
+    <div class="form-floating">
+      <input type="text" class="form-control" id="floatingUsename" placeholder="Username">
+      <label for="floatingUsename">Username (Train: mL2021Login)</label>
+    </div>
+
+    <div class="form-floating">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">Password (Train: LoginTrain_21)</label>
+    </div>
+
+
+    <button class="w-100 btn btn-lg btn-primary" type="submit" id="submit_btn">Sign in</button>
+	<hr/>
+	<div class="my-3 p-3 bg-body rounded shadow-sm  text-start">
+		<h6 class="border-bottom pb-2 mb-0">Train Feature</h6>
+		<iframe src="feature_desc.txt" width="600" scrolling="no"></iframe>
+	</div>	
+	
+	<div class="my-3 p-3 bg-body rounded shadow-sm">
+		<h6 class="border-bottom pb-2 mb-0">Training Console</h6>
+		<table id="train_console" class="table">
+			<tr>
+				<th>#</th>
+				<th>x1</th>
+				<th>x2</th>
+				<th>x3</th>
+				<th>x4</th>
+				<th>x5</th>
+				<th>x6</th>
+				<th>y</th>
+			</tr>
+		</table>
+	</div>
+  </form>	
+
+	<button class="w-100 btn btn-lg btn-outline-primary" id="copy_train">Copy Training Data</button>
+	<p class="mt-5 mb-3 text-muted"><a href="login.html">Login(NN)</a> | <a href="login_svm.html">Login(SVM)</a></p>
+  <p class="mt-5 mb-3 text-muted">&copy; 2021 by Si</p>
+</main>
+
+
+    
+  </body>
+</html>
